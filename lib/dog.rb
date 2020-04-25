@@ -68,7 +68,7 @@ class Dog
     if dog.empty?
       dog = self.create(name:name, breed:breed)
     else
-        dog = self.new_from_db(dog)
+        dog = self.new_from_db(dog[0])
     end
     dog
   end
