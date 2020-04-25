@@ -72,6 +72,6 @@ class Dog
     else
         dog = self.new_from_db(dog)
     end
-    od
+    dog
   end
 end
