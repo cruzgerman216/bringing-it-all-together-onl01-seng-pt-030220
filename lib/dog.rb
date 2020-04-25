@@ -78,7 +78,7 @@ class Dog
     dog = self.new_from_db(dog)
   end
 
-  def update
-
+  def update(name, breed)
+    sql = ""
   end
 end
