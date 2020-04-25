@@ -63,7 +63,7 @@ class Dog
     sql = " SELECT * FROM dogs WHERE name = ? AND breed = ?"
 
 
-    dog = DB[:conn].execute(sql,name,breed)
+    dog = DB[:conn].execute(sql,name,breed)[0]
 
     if dog.empty?
       dog = self.create(name:name, breed:breed)
